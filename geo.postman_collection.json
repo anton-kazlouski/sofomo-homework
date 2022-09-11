@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "4e4cf65a-7de3-4025-b922-46f424965670",
+		"name": "geo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3492947"
+	},
+	"item": [
+		{
+			"name": "Create location",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyOTE5NTQyLCJpYXQiOjE2NjI5MTU5NDIsImp0aSI6ImI4MDJlZjkzNTU3ZDQxYTJhMmU1YWUwNzBhNGQ2NmUwIiwidXNlcl9pZCI6MX0.depj9AjreDojQEdHYtqL2OndL4V-aCONyRF3DiRsILI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Homepage\",\n    \"domain\": \"nowhere.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/locations/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"locations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update location",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyOTI0OTIyLCJpYXQiOjE2NjI5MjEzMjIsImp0aSI6IjkxMTg2MjdiYTM2NTQ0N2VhZGY0NDhlMDkzYjkxNTliIiwidXNlcl9pZCI6MX0.dHWp5RlKjIfyESLx9nq_772gxF_ytUjUE7ij7Pgamfk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"longitude\": \"\",\n    \"latitude\": \"\",\n    \"ip\": \"\",\n    \"name\": \"\",\n    \"domain\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/locations/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"locations",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete location",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyOTI0OTIyLCJpYXQiOjE2NjI5MjEzMjIsImp0aSI6IjkxMTg2MjdiYTM2NTQ0N2VhZGY0NDhlMDkzYjkxNTliIiwidXNlcl9pZCI6MX0.dHWp5RlKjIfyESLx9nq_772gxF_ytUjUE7ij7Pgamfk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/locations/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"locations",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get location",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyOTI0OTIyLCJpYXQiOjE2NjI5MjEzMjIsImp0aSI6IjkxMTg2MjdiYTM2NTQ0N2VhZGY0NDhlMDkzYjkxNTliIiwidXNlcl9pZCI6MX0.dHWp5RlKjIfyESLx9nq_772gxF_ytUjUE7ij7Pgamfk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/locations/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"locations",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List locations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyOTI0OTIyLCJpYXQiOjE2NjI5MjEzMjIsImp0aSI6IjkxMTg2MjdiYTM2NTQ0N2VhZGY0NDhlMDkzYjkxNTliIiwidXNlcl9pZCI6MX0.dHWp5RlKjIfyESLx9nq_772gxF_ytUjUE7ij7Pgamfk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/locations/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"locations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh access token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2MzAwMDg3OCwiaWF0IjoxNjYyOTE0NDc4LCJqdGkiOiIzNzBhODBlNjQ4NzM0OTM1YWI5NDlkYmViMjMzMGMwZiIsInVzZXJfaWQiOjF9.Rya3ZK8YUfqNIrrPyk54iUsiX6ZCIh39fszqSedB2U8\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get access token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"admin\", \"password\": \"admin\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
