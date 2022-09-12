@@ -8,6 +8,7 @@ From project's root:
 ```
 $ python -m venv venv
 $ source venv/bin/activate
+$ pip install -r requirements.txt
 $ ./manage.py migrate
 $ ./manage.py createsuperuser
 $ ./manage.py runserver
